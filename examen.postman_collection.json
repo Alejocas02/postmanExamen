@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "3b80e6bf-dd06-4a34-962a-ebe6b538e169",
+		"name": "examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "respuestas estudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/respuestas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"respuestas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardar preguntas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"pregunta\":\"Capital de Chile\",\r\n    \"opcion1\":\"Concepción\",\r\n    \"opcion2\":\"Iquipe\",\r\n    \"opcion3\":\"Temuco\",\r\n    \"opcion4\":\"Ciudad de Chile\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/preguntas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"preguntas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardar estudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n   \r\n    \"nombre\":\"Luis\",\r\n    \"edad\":20,\r\n    \"ciudad\":\"chile\",\r\n    \"zonaHoraria\":\"GMT-3\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/estudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardar fecha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/fecha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"fecha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener examen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/examen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"examen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener preguntas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/preguntas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"preguntas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener respuestas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/respuestas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"respuestas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener hora de examen ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/presentar/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"presentar",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
